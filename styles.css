@@ -1,0 +1,81 @@
+
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --banner-color: white;
+    --banner-font: 'Norse Bold';
+}
+ul, ol {
+    padding: 0; 
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh; 
+    display: flex;
+    flex-direction: row; 
+    margin: 0;
+}
+
+#box {
+    border: 1px solid black;
+    flex: 0.25;
+    background: url('trees.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#box2 {
+    border: 1px solid black;
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#box #odin-banner {
+    height: 15vh; 
+    background: rgba(0, 0, 0, 0.5);
+    /* position: absolute; */
+    /* top: 25%; */
+    width: 100%;
+    flex: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#box #odin-banner > .odin-title {
+    font-size: 2rem;
+    font-family: var(--banner-font); 
+    color: var(--banner-color);
+}
+
+
+#box2 section {
+    border: 1px solid black;
+    flex: 1;
+}
+
+#box2 section:nth-child(1), #box2 section:nth-child(3){
+    flex: ;
+}
+
+#box2 section:nth-child(2) {
+    flex: 1;
+}
